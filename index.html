@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Загальний баланс</title>
+</head>
+
+<body>
+    <div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'kate_balance')">Катя</button>
+        <button class="tablinks" onclick="openTab(event, 'serhii_balance')">Сергій</button>
+        <button class="tablinks" onclick="openTab(event, 'savings_balance')">Збереження</button>
+    </div>
+
+    <form id="form">
+        <div class="tabcontent" id="kate_balance" style="display: block;">
+            <div class="input_field">
+                <label for="k_mono_uah">Моно UAH</label>
+                <input type="number" id="k_mono_uah" name="k_mono_uah">
+            </div>
+            <div class="input_field">
+                <label for="k_mono_usd">Моно USD</label>
+                <input type="number" id="k_mono_usd" name="k_mono_usd">
+            </div>
+            <div class="input_field">
+                <label for="k_oschad_uah">Ощад UAH</label>
+                <input type="number" id="k_oschad_uah" name="k_oschad_uah">
+            </div>
+        </div>
+
+        <div class="tabcontent" id="serhii_balance">
+            <div class="input_field">
+                <label for="s_mono_uah">Моно UAH</label>
+                <input type="number" id="s_mono_uah" name="s_mono_uah">
+            </div>
+            <div class="input_field">
+                <label for="s_mono_eur">Моно EUR</label>
+                <input type="number" id="s_mono_eur" name="s_mono_eur">
+            </div>
+            <div class="input_field">
+                <label for="s_kredo_uah">Кредо UAH</label>
+                <input type="number" id="s_kredo_uah" name="s_kredo_uah">
+            </div>
+            <div class="input_field">
+                <label for="s_privat_uah">Приват UAH</label>
+                <input type="number" id="s_privat_uah" name="s_privat_uah">
+            </div>
+            <div class="input_field">
+                <label for="s_privat_eur">Приват EUR</label>
+                <input type="number" id="s_privat_eur" name="s_privat_eur">
+            </div>
+            <div class="input_field">
+                <label for="s_otp_huf">OTP HUF</label>
+                <input type="number" id="s_otp_huf" name="s_otp_huf">
+            </div>
+        </div>
+
+        <div class="tabcontent" id="savings_balance">
+            <div class="input_field">
+                <label for="cash_usd">Нал USD</label>
+                <input type="number" id="cash_usd" name="cash_usd">
+            </div>
+        </div>
+        
+        <textarea placeholder="Сюди коментар" id="comment" name="comment"></textarea>
+
+        <button type="button" id="submit" onclick="submitForm()">Відправити</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
