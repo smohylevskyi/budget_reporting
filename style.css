@@ -86,3 +86,26 @@ textarea {
           box-shadow: inset 0px 0px 5px #c1c1c1;
    outline: none;
 }
+
+#succ_overlay {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    padding: 10vh;
+    background-color: green;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    display: none;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+#succ_overlay img {
+    position: absolute;
+    width: 100%;
+    margin-top: -10vh;
+}

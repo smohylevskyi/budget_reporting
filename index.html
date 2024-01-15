@@ -13,6 +13,12 @@
 </head>
 
 <body>
+
+    <div id="succ_overlay">
+        <p>Успішно відправлено!</p>
+        <img src="money-rain.gif">
+    </div>
+
     <div class="tab">
         <button class="tablinks active" onclick="openTab(event, 'kate_balance')">Катя</button>
         <button class="tablinks" onclick="openTab(event, 'serhii_balance')">Сергій</button>
@@ -64,12 +70,28 @@
 
         <div class="tabcontent" id="savings_balance">
             <div class="input_field">
+                <label for="s_jar">Банка Сергій</label>
+                <input type="number" id="s_jar" name="s_jar">
+            </div>
+            <div class="input_field">
+                <label for="k_jar">Банка Катя</label>
+                <input type="number" id="k_jar" name="k_jar">
+            </div>
+            <div class="input_field">
                 <label for="cash_usd">Нал USD</label>
                 <input type="number" id="cash_usd" name="cash_usd">
             </div>
+            <div class="input_field">
+                <label for="cash_eur">Нал EUR</label>
+                <input type="number" id="cash_eur" name="cash_eur">
+            </div>
+            <div class="input_field">
+                <label for="cash_huf">Нал HUF</label>
+                <input type="number" id="cash_huf" name="cash_huf">
+            </div>
         </div>
-        
-        <textarea placeholder="Сюди коментар" id="comment" name="comment"></textarea>
+
+        <textarea placeholder="Сюди коментар" id="comment" name="comment" required></textarea>
 
         <button type="button" id="submit" onclick="submitForm()">Відправити</button>
     </form>
