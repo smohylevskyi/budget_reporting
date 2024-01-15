@@ -75,16 +75,17 @@ textarea {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: larger;
-    width: 100%;
+    width: 49%;
+    display: inline-block;
 }
 
 #submit:active {
     transition: 0.3s;
     background: lightgrey;
     -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-          box-shadow: inset 0px 0px 5px #c1c1c1;
-   outline: none;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
 }
 
 #succ_overlay {
@@ -95,7 +96,7 @@ textarea {
     text-align: center;
     padding: 10vh;
     background-color: green;
-    font-size: 30px;
+    font-size: 33px;
     font-weight: bold;
     color: white;
     display: none;
@@ -110,6 +111,11 @@ textarea {
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

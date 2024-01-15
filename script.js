@@ -1,4 +1,4 @@
-function submitForm() {
+function submitForm(email) {
   // Reset previous validation
   resetValidation();
 
@@ -50,7 +50,7 @@ function submitForm() {
       `&entry.2135252641=${encodeURIComponent(cash_usd)}` +
       `&entry.1729212170=${encodeURIComponent(cash_eur)}` +
       `&entry.307762344=${encodeURIComponent(comment)}` +
-      `&entry.1101813924=mrmist8@gmail.com`
+      `&entry.1101813924=${encodeURIComponent(email)}`
 
     // Make API call (you can use fetch or other methods)
     fetch(url, {mode: "no-cors"})
@@ -61,6 +61,14 @@ function submitForm() {
         overlay.style.animation = "fadeIn 1s forwards";
     });
   }
+}
+
+function submitFormAsKate() {
+  submitForm("kateryna.mohylevska@gmail.com")
+}
+
+function submitFormAsSerhii() {
+  submitForm("mrmist8@gmail.com")
 }
 
 function markFieldAsInvalid(field) {
