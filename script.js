@@ -53,17 +53,13 @@ function submitForm() {
       `&entry.1101813924=mrmist8@gmail.com`
 
     // Make API call (you can use fetch or other methods)
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
+    fetch(url, {mode: "no-cors"})
+      .then( function() {
         // Handle API response if needed
         const overlay = document.querySelector('#succ_overlay');
-        overlay.style.opacity = 1;
-        overlay.style.display = "block";
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
+        overlay.style.display = "flex";
+        overlay.style.animation = "fadeIn 1s forwards";
+    });
   }
 }
 
