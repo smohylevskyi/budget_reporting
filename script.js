@@ -33,9 +33,9 @@ function submitForm(email) {
     const comment = document.getElementById('comment').value;
 
     // Compose URL
-    const apiUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSexfYo16-hRRzGWWtgQk43PQWuFpE4tUwLYIKO3yMueAwL2xQ/formResponse?&submit=Submit&usp=pp_url?';
+    const apiUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSexfYo16-hRRzGWWtgQk43PQWuFpE4tUwLYIKO3yMueAwL2xQ/formResponse?submit=Submit&usp=pp_url';
     const url = `${apiUrl}` +
-      `entry.1288048134=${encodeURIComponent(k_mono_uah)}` +
+      `&entry.1288048134=${encodeURIComponent(k_mono_uah)}` +
       `&entry.977679883=${encodeURIComponent(k_mono_usd)}` +
       `&entry.29642998=${encodeURIComponent(k_oschad_uah)}` +
       `&entry.1756893984=${encodeURIComponent(s_kredo_uah)}` +

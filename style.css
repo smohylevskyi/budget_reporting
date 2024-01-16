@@ -8,6 +8,9 @@ body {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -69,14 +72,19 @@ textarea {
     box-sizing: border-box;
 }
 
+.button-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 #submit {
     background-color: #e5e5e5;
     border: none;
     padding: 14px 16px;
     transition: 0.3s;
     font-size: larger;
-    width: 49%;
-    display: inline-block;
+    width: 49.5%;
 }
 
 #submit:active {
